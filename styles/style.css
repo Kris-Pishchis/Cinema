@@ -149,3 +149,19 @@ hr, .cinemaInfo{
     background: rgb(255, 128, 0);
     transition: 0.2s;
 }
+
+select{
+    background: rgba(202, 200, 200, 0.25);
+    border: solid white 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+}
+option{
+    background: rgb(63, 63, 63);
+}
+.select1{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
