@@ -33,3 +33,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+function video() {
+    let a = document.getElementById("vidos");
+    let elements = document.querySelectorAll('.splitImg')
+        elements.forEach(element => {
+            element.style.display = "none";
+        })
+            a.style.display = "block";
+        }
+
+const menuButton = document.querySelector('.bat-nav');
+const menu = document.querySelector('.menu');
+
+menuButton.addEventListener('click', () => {
+    menu.classList.toggle('is-open');
+});
+
