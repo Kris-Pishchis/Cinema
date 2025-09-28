@@ -11,10 +11,11 @@
 .section_1{
     background-image: linear-gradient(rgba(98, 20, 2, 0.11), rgba(133, 3, 3, 0.9)), url(images/bg.png);
     /* background-image: url(images/bg.png); */
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    background-repeat: no-repeat;/*для того чтоб изображение не повторялось*/
+    background-position: center top;/*центрирование фона*/
+    background-size: cover;/*покрывает полнотью область элемента*/
 }
+
 /*навигация + профиль*/
 header{
     display: flex;
@@ -29,7 +30,7 @@ hr{
 
 p{
     font-size: 16px;
-    line-height: 150%
+    line-height: 150%/*расстояние между строками*/
 }
 
 h1{
@@ -46,11 +47,12 @@ h2{
 h1, h2{
     margin-bottom: 2.5%;
 }
+
 /*навигация*/
 .navigation{
     width: 40%;
     display: flex;
-    align-items: center;
+    align-items: center;/*выравнивание элементов внутри контейнера по центру*/
     margin-top: 1.5%;
 }
 
@@ -61,7 +63,7 @@ h1, h2{
 }
 
 .bat-nav{
-    display: none;
+    display: none;/*убираем кнопку она нам нужна только при адаптации*/
 }
 
 /*профиль*/
@@ -69,7 +71,7 @@ h1, h2{
     width: 40%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end;/*выравнивает элементы flex-контейнера в конце контейнера*/
     margin-top: 1.5%;
 }
 
@@ -77,13 +79,13 @@ header a{
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: 0.3s;
+    transition: 0.3s;/*указание длительности перехода*/
     font-size: 1.25vw;
 }
 
 header a:hover{
     color: #FE8E05;
-    transition: 0.3s;
+    transition: 0.3s;/*указание длительности перехода*/
 }
 
 .profil p{
@@ -130,12 +132,12 @@ main{
 
 .splitImg img{
     width: 100%;
-    transition: 0.3s;
+    transition: 0.3s;/*указание длительности перехода*/
 }
 
 .splitImg img:hover{
-    filter: saturate(0.5);
-    transition: 0.3s;
+    filter: saturate(0.5);/*насыщенность элемента*/
+    transition: 0.3s;/*указание длительности перехода*/
 }
 
 .splitTime{
@@ -177,6 +179,7 @@ hr, .cinemaInfo{
     height: 80%;
     display: none;
 }
+
 /*Дата + кинотеатр + время*/
 .cinemaInfo{
     display: flex;
@@ -200,12 +203,12 @@ hr, .cinemaInfo{
     width: 17.5%;
     margin-top: 5%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/*элементы располагаются вертикально в контейнере*/
     align-items: center;
     border: solid white 1px;
     border-radius: 5px;
-    cursor: pointer;
-    user-select: none;
+    cursor: pointer;/* внешний вид курсора в виде руки*/
+    user-select: none;/*запрещает выделение текста*/
     transition: 0.2s;
 }
 .date p, .cinema p, .time p{
@@ -278,7 +281,7 @@ footer{
 }
 
 table{
-    user-select: none;
+    user-select: none;/*запрещает выделение текста*/
 }
 .tableSecondOne{
     display: flex;
@@ -298,7 +301,7 @@ table{
 }
 input[type="radio"]{
     display: none;
-}
+}/*радиокнопку (переключатель)*/
 
 input[type="radio"]:checked + .day{
   background: #FE8E05;
@@ -386,6 +389,8 @@ td img{
     font-size: 50px;
 }
 
+
+/*медиа запросы для адаптивности сайта*/
 @media (max-width: 1200px ){
     .navigation, .profil{
         width: 45%;
@@ -406,7 +411,7 @@ td img{
     .sit, .itogo{
         width: 95%;
     }
-}
+}/*изменение ширины контейнеров*/
 
 @media(max-width: 720px){
     h1{
@@ -522,4 +527,4 @@ td img{
     .main-legend div span{
         font-size: 3vw;
     }
-}
+}/*изменение вида контейнеров для лучшего отражения на телефонах*/
