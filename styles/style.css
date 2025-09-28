@@ -9,8 +9,8 @@
 
 /*шапка + главный экран*/
 .section_1{
-    /* background-image: linear-gradient(rgba(98, 20, 2, 0.11), rgba(133, 3, 3, 0.9)), url(images/bg.png); */
-    background-image: url(images/bg.png);
+    background-image: linear-gradient(rgba(98, 20, 2, 0.11), rgba(133, 3, 3, 0.9)), url(images/bg.png);
+    /* background-image: url(images/bg.png); */
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -243,8 +243,8 @@ option{
 
 /*Схема зала + цена*/
 footer{
-    /* background: linear-gradient(rgba(127, 3, 3, 0.985), rgb(118, 2, 2)); */
-    background: #621402;
+    background: linear-gradient(rgba(127, 3, 3, 0.985), rgb(118, 2, 2));
+    /* background: #621402; */
     padding: 5%;
 }
 
@@ -408,10 +408,6 @@ td img{
     }
 }
 
-@media (max-width: 992px) {
-
-}
-
 @media(max-width: 720px){
     h1{
         font-size: 4vw;
@@ -454,6 +450,10 @@ td img{
         background-color: #621402;
     }
 
+    .is-open a{
+        padding: 2%;
+    }
+
     .profil p{
         font-size: 3vw;
     }
@@ -482,7 +482,7 @@ td img{
     }
     .date, .cinema, .time{
         width: 100%;
-        padding-top: 2%;
+        padding-top: 5%;
     }
     .day p{
         font-size: 3vw;
@@ -495,6 +495,7 @@ td img{
     }
     .date p, .cinema p, .time p{
         font-size: 3vw;
+        padding-bottom: 5%;
     }
     
     footer{
